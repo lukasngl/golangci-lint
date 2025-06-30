@@ -75,6 +75,7 @@ require (
 	github.com/ldez/tagliatelle v0.7.1
 	github.com/ldez/usetesting v0.5.0
 	github.com/leonklingele/grouper v1.1.2
+	github.com/lukasngl/godogen v0.2.0
 	github.com/macabu/inamedparam v0.2.0
 	github.com/manuelarte/embeddedstructfieldcheck v0.3.0
 	github.com/manuelarte/funcorder v0.5.0
@@ -177,6 +178,7 @@ require (
 	github.com/hashicorp/golang-lru/v2 v2.0.7 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/hexops/gotextdiff v1.0.3 // indirect
+	github.com/iancoleman/strcase v0.3.0 // indirect
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect
 	github.com/lucasb-eyer/go-colorful v1.2.0 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
