@@ -43,6 +43,7 @@ import (
 	"github.com/golangci/golangci-lint/v2/pkg/golinters/goconst"
 	"github.com/golangci/golangci-lint/v2/pkg/golinters/gocritic"
 	"github.com/golangci/golangci-lint/v2/pkg/golinters/gocyclo"
+	"github.com/golangci/golangci-lint/v2/pkg/golinters/godogen"
 	"github.com/golangci/golangci-lint/v2/pkg/golinters/godot"
 	"github.com/golangci/golangci-lint/v2/pkg/golinters/godox"
 	"github.com/golangci/golangci-lint/v2/pkg/golinters/gofmt"
@@ -330,6 +331,10 @@ func (LinterBuilder) Build(cfg *config.Config) ([]*linter.Config, error) {
 		linter.NewConfig(gocyclo.New(&cfg.Linters.Settings.Gocyclo)).
 			WithSince("v1.0.0").
 			WithURL("https://github.com/fzipp/gocyclo"),
+
+		linter.NewConfig(godogen.New()).
+			WithSince("v2.2.1").
+			WithURL("https://github.com/lukasngl/godogen"),
 
 		linter.NewConfig(godot.New(&cfg.Linters.Settings.Godot)).
 			WithSince("v1.25.0").
